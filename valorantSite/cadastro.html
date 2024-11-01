@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+</head>
+
+<body>
+    <nav class="menu-top">
+        <a class="link-menu" href="index.html">
+            <img class="img-menu" src="img/logo-vava.png" alt="" width="200px" height="100px">
+        </a>
+        <div class="item-link">
+            <a class="link" href="index.html">Home</a>
+            <a class="link" href="sobre.html">Sobre</a>
+            <a class="link" href="cadastro.html">Cadastro</a>
+        </div>
+    </nav>
+    <form class="main-cadastro" action="">
+
+        <h1 class="h1-cadastro">venha fazer parte do nosso site</h1>
+
+        <div class="informe">
+            <label class="label-cadastro" for="nome-user">Nome</label>
+            <input id="nomeUser" class="input-cadastro" type="text" name="nome" id="nome-user">
+        </div>
+
+        <div class="informe">
+            <label class="label-cadastro" for="sobre-user">Sbrenome</label>
+            <input id="sobreUser" class="input-cadastro" type="text" name="sobre" id="sobre-user">
+        </div>
+
+        <div class="informe">
+            <labe class="label-cadastro" for="tele-user">Telefone</label>
+            <input id="teleUser" class="input-cadastro" type="tel" name="tele" id="tele-user">
+        </div>
+        <div class="informe">
+            <label class="label-cadastro" for="email-user">Email</label>
+            <input id="emailUser" class="input-cadastro" type="email" name="email" id="email-user">
+        </div>
+
+        <div class="informe">
+            <label class="label-cadastro" for="senha-user">Senha</label>
+            <input id="senhaUser" class="input-cadastro" type="password" name="password" id="senha-user">
+        </div>
+
+        <div class="informe">
+            <label class="label-cadastro" for="dnovo-senha">Digite novamente a Senha</label>
+            <input id="dnovoUser" class="input-cadastro" type="password" name="dnovo" id="dnovo-senha">
+        </div>
+
+        <button id="btnCadastrar" class="btn-cadastro" type="submit">Cadastrar</button>
+
+        <button class="btnCadastro" type="reset">Limpar</button>
+
+        <script>
+            var btnCadastrar = document.getElementById("btnCadastrar");
+            var nomeUser = document.getElementById("nomeUser");
+            var sobreUser = document.getElementById("sobreUser");
+            var teleUser = document.getElementById("teleUser");
+            var emailUser = document.getElementById("emailUser");
+            var senhaUser = document.getElementById("senhaUser");
+            var dnovoUser = document.getElementById("dnovoUser");
+            
+
+            btnCadastrar.addEventListener("click",function(){
+                if (nomeUser.value == "" || sobreUser.value == "" || teleUser.value == "" || emailUser.value == "" || senhaUser.value == "" || dnovoUser.value == ""){
+                    alert("preencha todos os campos");
+                }else{
+                    alert("login efetuado com sucesso");
+                }
+            });
+        </script>
+
+    </form>
+</body>
+
+</html>
